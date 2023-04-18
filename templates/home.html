@@ -1,0 +1,67 @@
+<h1>
+  Formulário de NPS
+</h1>
+<form method="post" >
+<div class="form-group">
+  <label for="atende">Você atende {{ company }}?</label><br/>
+  <div class="radio">
+    <input type="radio" id="yes" name="atende" value="yes">
+    <label for="yes">Sim</label>
+  </div>
+  <div class="radio">
+    <input type="radio" id="no" name="atende" value="no">
+    <label for="no">Não</label>
+  </div>
+  <input type='hidden' name='company' value={{ company }} />
+</div>
+<br/><br/>
+<button type="submit">Submit</button>
+</form>
+
+<style>
+  /* Please desing this basic form to be aesthetically pleasing */
+  h1 {
+    text-align: center;
+  }
+  form {
+    width: 50%;
+    margin: 0 auto;
+  }
+  .form-group {
+    margin-bottom: 20px;
+  }
+  .radio {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+  }
+  input[type="radio"] {
+    margin-right: 10px;
+    width: auto;
+    height: auto;
+  }
+  label {
+    margin-bottom: 0;
+  }
+  button {
+    width: 100%;
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  button:hover {
+    background-color: #45a049;
+  }
+  h1 {
+    text-align: center;
+    font-size: 48px;
+    color: #000000b0;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    font-family: 'Roboto', sans-serif;
+  }
+</style>
